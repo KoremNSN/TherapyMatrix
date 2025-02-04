@@ -63,7 +63,7 @@ with st.form(key="email_form"):
     first_name = st.text_input("First Name")
     last_name = st.text_input("Last Name")
     user_email = st.text_input("Your Email")
-    date_filled = st.date_input(label, value="today")
+    date_filled = st.date_input(value="today")
 
     submit_button = st.form_submit_button(label="Send final response")
 

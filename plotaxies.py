@@ -63,6 +63,7 @@ with st.form(key="email_form"):
     first_name = st.text_input("First Name")
     last_name = st.text_input("Last Name")
     user_email = st.text_input("Your Email")
+    date_filled = st.date_input(label, value="today")
 
     submit_button = st.form_submit_button(label="Send final response")
 
@@ -85,6 +86,7 @@ with st.form(key="email_form"):
             f"The user has entered:\n"
             f"Name: {first_name} {last_name}\n"
             f"Email: {user_email}\n\n"
+            f"Date: {date_filled}\n\n"
             f"Below is the current CSV data:\n\n"
             f"{csv_content}"
         )
